@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import Amazon from './components/Amazon';
+import Home from './components/Home';
 import Cart from './components/Cart';
 import Navbar from './components/Navbar';
 
@@ -26,7 +26,7 @@ function App() {
     <>
         <Navbar setShow = {setShow} size = {cart.length}/>
         {
-          show?<Amazon handleClick={handleClick} /> : <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
+          show?<Home handleClick={handleClick} /> : <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
         }
     </>
   );

@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import list from '../data'
 import Card from './Card'
-import './amazon.css'
+import './home.css'
 
 const Amazon = ({handleClick}) => {
 
